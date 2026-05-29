@@ -1,0 +1,311 @@
+
+/* =========================
+   CONTAINER
+========================= */
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #111;
+}
+
+/* =========================
+   HEADER
+========================= */
+.nav ul{
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li{
+  list-style: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav ul li:hover{
+  background-color: #111;
+  color: white;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+.item2{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background-color: #fafafa;
+}
+
+.mainContent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1100px;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+.product{
+  width: 220px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+  transition: all 0.3s ease;
+}
+
+.product:hover{
+  transform: translateY(-5px);
+  border-color: #111;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.mainProduct{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* =========================
+   IMAGE
+========================= */
+.productImage{
+  width: 100%;
+  height: 150px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+.productImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   PRODUCT NAME
+========================= */
+.productName{
+  text-align: center;
+}
+
+.productName h5{
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+}
+
+/* =========================
+   PRICE
+========================= */
+.productPrice{
+  text-align: center;
+}
+
+.price{
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.discount{
+  display: block;
+  margin-top: 4px;
+}
+
+.oldPrice{
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.percent{
+  color: #555;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =========================
+   REMAIN
+========================= */
+.productRemain{
+  background: #f3f3f3;
+  border-radius: 6px;
+  padding: 6px 0;
+  text-align: center;
+}
+
+.productRemain span{
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* =========================
+   BUY BUTTON
+========================= */
+.buyButton{
+  display: block;
+
+  width: 100%;
+  margin-top: 15px;
+
+  background: #111;
+  color: #fff;
+
+  text-align: center;
+  text-decoration: none;
+
+  padding: 11px 0;
+  border-radius: 6px;
+
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  transition: all 0.3s ease;
+}
+
+.buyButton:hover{
+  background: #333;
+  transform: scale(1.03);
+}
+
+/* =========================
+   FOOTER
+========================= */
+.item3{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer{
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 13px;
+  color: #444;
+}
+
+.footerSection{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footerSection div{
+  flex: 1;
+  min-width: 200px;
+}
+
+.footerSection strong{
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #000;
+}
+
+.footerSection ul{
+  padding: 0;
+  margin: 0;
+}
+
+.footerSection ul li{
+  list-style: none;
+  padding: 4px 0;
+  cursor: pointer;
+  color: #666;
+  transition: 0.3s;
+}
+
+.footerSection ul li:hover{
+  color: #000;
+  text-decoration: underline;
+}
+
+/* =========================
+   WEBSITE LOGO
+========================= */
+.website{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+
+  filter: grayscale(100%);
+  opacity: 0.7;
+
+  transition: 0.3s;
+}
+
+.website:hover{
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.website i{
+  width: 80px;
+  height: 24px;
+  display: block;
+  background-size: 250px 200px;
+}
+
+.tgdd{
+  background-position: 0 0;
+  background-image: url('/Logo-webmoi-min.png');
+}
+
+.topzone{
+  background-position: 0 -58px;
+  background-image: url('/Logo-webmoi-min.png');
+}
+
+.bhx{
+  background-position: -170px 0;
+  background-image: url('/Logo-webmoi-min.png');
+}
+
+.ankhang{
+  background-position: -85px -90px;
+  background-image: url('/Logo-webmoi-min.png');
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+.copyright{
+  font-size: 12px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 10px;
+  line-height: 1.6;
+}
+
